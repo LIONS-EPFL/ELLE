@@ -1,0 +1,4 @@
+*.pyc
+apex/
+*.pth
+*.tar
