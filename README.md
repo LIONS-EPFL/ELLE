@@ -26,7 +26,7 @@ losses = criterion(model(torch.cat((x_ab,x_c),dim=0)), y.repeat([3]))
 mse = torch.nn.MSELoss()
 lin_err = mse(losses[2*bs:], (1-alpha)*losses[:bs] + alpha*losses[bs:2*bs])
 ```
-This snippet can be used to obtain our regularization term. `model` is a neural network, `x` are the batched inputs and `y` the batched labels.
+This snippet can be used to obtain our regularization term. `model` is a neural network, `x` are the batched inputs, `y` the batched labels and `eps` the perturbation budget.
 
 ### Instalation:
 The dependencies of this project can be easily installed via:
