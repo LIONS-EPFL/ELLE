@@ -13,7 +13,7 @@ Official implementation in PyTorch of the **ICLR'24 paper "Efficient local linea
 # Get random triplet
 bs = x.shape[0]
 x_ab = x.repeat([2,1,1,1]) 
-x_ab = x_ab + self.args.attack_eps*(2*torch.rand(x_ab.shape, device = x.device) - 1)
+x_ab = x_ab + eps*(2*torch.rand(x_ab.shape, device = x.device) - 1)
 alpha = torch.rand([bs,1,1,1],device = x.device)
 x_c = (1-alpha)*x_ab[:bs] + alpha*x_ab[bs:]
 alpha = alpha.squeeze()
