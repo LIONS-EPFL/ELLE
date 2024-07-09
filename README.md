@@ -56,7 +56,7 @@ where `stats.csv` stores the training, validation and test accuracies (clean and
 @inproceedings{Abad2024ELLE,
   author = {Abad Rocamora, Elias and Liu, Fanghui and Chrysos, Grigorios G and M. Olmos, Pablo and Cevher, Volkan},
 
-  title = {Overcomming delayed catastrophic overfitting efficiently},
+  title = {Efficient local linearity regularization to overcome catastrophic overfitting},
 
   booktitle = {International Conference on Learning Representations (ICLR)},
 
